@@ -3560,7 +3560,7 @@ class PE:
 
 
     def dword_align(self, offset, base):
-        return ((offset+base+3) & 0xfffffffcL) - (base & 0xfffffffcL)
+        return ((offset+base+3) & 0xfffffffc) - (base & 0xfffffffc)
 
 
     def parse_delay_import_directory(self, rva, size):
