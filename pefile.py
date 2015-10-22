@@ -2693,7 +2693,7 @@ class PE:
         try:
             data = self.get_data(data_rva, size)
             file_offset = self.get_offset_from_rva(data_rva)
-        except PEFormatError, excp:
+        except PEFormatError:
             self.__warnings.append(
                 'Bad RVA in relocation data: 0x%x' % (data_rva))
             return []
