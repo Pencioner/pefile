@@ -2179,7 +2179,7 @@ class PE:
         """
 
         for warning in self.__warnings:
-            print '>', warning
+            print('>', warning)
 
 
     def full_load(self):
@@ -4249,7 +4249,7 @@ class PE:
 
     def print_info(self):
         """Print all the PE header information in a human readable from."""
-        print self.dump_info()
+        print(self.dump_info())
 
 
     def dump_info(self, dump=None):
