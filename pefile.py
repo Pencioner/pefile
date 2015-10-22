@@ -1998,7 +1998,7 @@ class PE:
                 self.OPTIONAL_HEADER.NumberOfRvaAndSizes )
 
         MAX_ASSUMED_VALID_NUMBER_OF_RVA_AND_SIZES = 0x100
-        for i in xrange(int(0x7fffffffL & self.OPTIONAL_HEADER.NumberOfRvaAndSizes)):
+        for i in xrange(int(0x7fffffff & self.OPTIONAL_HEADER.NumberOfRvaAndSizes)):
 
             if len(self.__data__) - offset == 0:
                 break
