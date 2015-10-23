@@ -4157,7 +4157,7 @@ class PE:
             if rva<len(self.__data__):
                 return rva
 
-            raise PEFormatError, 'data at RVA can\'t be fetched. Corrupt header?'
+            raise PEFormatError('data at RVA can\'t be fetched. Corrupt header?')
 
         return s.get_offset_from_rva(rva)
 
