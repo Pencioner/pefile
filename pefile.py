@@ -4112,7 +4112,7 @@ class PE:
             if rva < len(self.__data__):
                 return self.__data__[rva:end]
 
-            raise PEFormatError, 'data at RVA can\'t be fetched. Corrupt header?'
+            raise PEFormatError('data at RVA can\'t be fetched. Corrupt header?')
 
         return s.get_data(rva, length)
 
